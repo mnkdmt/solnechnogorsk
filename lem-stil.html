@@ -57,6 +57,15 @@
 
   .note{background:var(--card); border-left:5px solid var(--accent); border-radius:12px; padding:clamp(16px,2.2vw,24px); color:var(--slate); margin-top:16px;}
 
+  .fin-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:clamp(14px,1.8vw,20px);}
+  .fin{background:#fff; border:1px solid var(--hair); border-radius:14px; box-shadow:var(--shadow); padding:clamp(16px,2vw,22px);}
+  .fin .f-label{color:var(--label); font-size:.92rem;}
+  .fin .f-val{font-size:clamp(1.45rem,3vw,2rem); font-weight:800; color:var(--navy); margin-top:.15em; line-height:1.1;}
+  .fin .f-val small{font-size:.5em; font-weight:700; color:var(--slate); margin-left:.2em;}
+  .fin .delta{display:inline-block; margin-top:.5em; font-weight:700; font-size:.95rem;}
+  .delta.up{color:#1a7f4b;} .delta.down{color:#c0392b;}
+  .src{color:var(--label); font-size:.86rem; margin-top:clamp(14px,2vw,20px);}
+
   .timeline{position:relative; margin-left:8px; padding-left:34px;}
   .timeline::before{content:""; position:absolute; left:9px; top:8px; bottom:8px; width:3px; background:var(--blue-lt); border-radius:3px;}
   .tl-item{position:relative; padding-bottom:clamp(20px,2.6vw,30px);}
@@ -141,7 +150,7 @@
   <section class="sec">
     <div class="sec-head"><div class="kicker">Состав участников</div><h2>Участники встречи</h2></div>
     <div class="people">
-      <div class="person"><div class="avatar">МА</div><div><div class="p-name">Мурадян Арман Борисович</div><div class="p-role">Представитель учредителей</div></div></div>
+      <div class="person"><div class="avatar">МА</div><div><div class="p-name">Мурадян Арман Борисович</div><div class="p-role">Учредитель</div></div></div>
       <div class="person"><div class="avatar">КД</div><div><div class="p-name">Кашин Дмитрий Евгеньевич</div><div class="p-role">Генеральный директор ООО «ЛЕМАРК»</div></div></div>
       <div class="person"><div class="avatar">ЗГ</div><div><div class="p-name">Зелинская Галина Александровна</div><div class="p-role">Руководитель отдела маркетинга ООО «ЛЕМАРК»</div></div></div>
       <div class="person"><div class="avatar">УМ</div><div><div class="p-name">Ухова Мария Александровна</div><div class="p-role">Финансовый директор</div></div></div>
@@ -178,9 +187,24 @@
           <div><dt>Срок реализации</dt><dd>IV квартал 2027</dd></div>
           <div><dt>ИНН</dt><dd>7724340244</dd></div>
         </dl>
-        <div class="note">Инвестиционный проект на территории округа: строительство производственного комплекса по изготовлению уличной всепогодной мебели и металлоизделий (кадастровый участок 50:09:0050120:56).</div>
+        <div class="note">Создана в 2015 году на производственной базе завода «Лемарк». Изготавливает готовые изделия из HPL-пластика — мебель, интерьерную и экстерьерную отделку, архитектурные формы (дизайн, проектирование, сборка и монтаж). Реализует инвестпроект по строительству комплекса уличной всепогодной мебели и металлоизделий (кадастровый участок 50:09:0050120:56).</div>
       </div>
     </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head"><div class="kicker">Финансовые показатели</div><h2>ООО «ЛЕМ-СТИЛЬ» · итоги 2025 года</h2>
+      <div class="sub">Финансовая отчётность и налоги за 2025 год.</div></div>
+    <div class="fin-grid">
+      <div class="fin"><div class="f-label">Выручка</div><div class="f-val">544,2<small>млн ₽</small></div><div class="delta down">▼ −5%</div></div>
+      <div class="fin"><div class="f-label">Чистая прибыль</div><div class="f-val">14<small>млн ₽</small></div><div class="delta down">▼ −80%</div></div>
+      <div class="fin"><div class="f-label">Активы</div><div class="f-val">880,8<small>млн ₽</small></div><div class="delta up">▲ +143%</div></div>
+      <div class="fin"><div class="f-label">Собственный капитал</div><div class="f-val">188,3<small>млн ₽</small></div><div class="delta up">▲ +6%</div></div>
+      <div class="fin"><div class="f-label">Основные средства</div><div class="f-val">180,2<small>млн ₽</small></div><div class="delta up">▲ +247%</div></div>
+      <div class="fin"><div class="f-label">Налоги и сборы</div><div class="f-val">56,1<small>млн ₽</small></div><div class="delta up">▲ +28%</div></div>
+      <div class="fin"><div class="f-label">Страховые взносы</div><div class="f-val">9,5<small>млн ₽</small></div><div class="delta up">▲ +61%</div></div>
+    </div>
+    <div class="src">Источник: данные по ООО «ЛЕМ-СТИЛЬ» за 2025 год (checko.ru). Стрелки — динамика к предыдущему году.</div>
   </section>
 
 </main>
